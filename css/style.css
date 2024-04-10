@@ -1,0 +1,206 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Reset Button */
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Common */
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-center-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-no-center {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-padding {
+    padding: 1.5vh;
+}
+
+.margin {
+    margin: 3vh 0;
+}
+
+
+.bg-grey {
+    background-color: lightgray;
+}
+
+.bg-blue {
+    background-color: #1b72e8;
+}
+
+.bg-dark-blue {
+    background-color: #11283d;
+}
+
+/* Web App */
+
+body {
+    height: 100vh;
+}
+
+.left-navBar {
+    width: 5rem;
+    height: 96vh;
+    margin-top: 4rem;
+    padding: 1rem;
+    position: fixed;
+    top: 0vh;
+    left: 0;
+    color: white;
+}
+
+header {
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header */
+
+.topnav {
+    height: 4rem;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+/* Main */
+
+.top-body {
+    width: 100%;
+    margin-top: 4rem;
+    color: white;
+}
+
+.main-body {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.wrapper i {
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.top-body i {
+    color: white;
+    border: 1px solid white;
+    border-radius: none;
+
+}
+
+.dark-rounded {
+    background-color: #165bba;
+    border-radius: 10px;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    border: none !important;
+}
+
+.little {
+    font-size: 0.7rem;
+    border: none !important;
+}
+
+select {
+    height: 2rem;
+}
+
+/* Hover */
+
+.hover-bg:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.fa-pencil:hover {
+    color: black;
+}
+
+.fa-dumpster:hover {
+    color: black;
+}
+
+/* Media */
+
+@media screen and (min-width:958px) {
+    .left-navBar {
+        width: 10rem;
+    }
+
+    .wrapper {
+        margin-left: 10rem;
+    }
+
+}
