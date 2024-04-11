@@ -135,6 +135,10 @@ hr {
     color: goldenrod;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 /* Main */
 
 .top-body {
