@@ -10,7 +10,7 @@
 /* Reset Button */
 
 button {
-    background-color: black;
+    background-color: transparent;
     color: white;
     border: none;
     border-radius: 15px;
@@ -204,6 +204,18 @@ select {
     color: black;
 }
 
+.hover-white:hover {
+    background-color: black;
+    color: #165bba;
+    border-color: #165bba;
+}
+
+/* OffCanvas Size */
+
+.offcanvas {
+    width: 100vw !important;
+}
+
 /* Media */
 
 @media screen and (min-width:958px) {
@@ -213,6 +225,10 @@ select {
 
     .wrapper {
         margin-left: 10rem;
+    }
+
+    .offcanvas {
+        width: 50vw !important;
     }
 
 }

@@ -35,8 +35,7 @@
                 <div class="d-none d-lg-inline  col-lg-1"><i class="fa-solid  fa-ellipsis-vertical ps-2"></i></div>
                 <!-- DropStart -->
                 <div class="dropstart">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bell gold"></i>
                     </button>
                     <ul class="dropdown-menu">
@@ -69,8 +68,10 @@
             </div>
             <div class="row justify-content-center text-center align-items-end">
                 <div class="col-8 col-lg-10 d-flex align-self-end py-2 hover-bg">
-                    <div><i class="fa-solid fa-gear align-self-center me-1"></i></div>
-                    <div class="d-none d-lg-inline">Admin</div>
+                    <div></div>
+                    <div class=""><button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"><i class="fa-solid fa-gear align-self-center me-1"></i><span
+                                class="d-none d-lg-inline">Admin</span></button></div>
                 </div>
             </div>
         </nav>
@@ -80,9 +81,8 @@
             <div class="top-body p-2 bg-blue">
                 <div class="d-flex flex-wrap p-2">
                     <div class="col-12 col-md-2 py-2 fs-4 order-md-3">Nuovo Studente<!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            <i class="fa-solid fa-plus ms-1"></i>
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-plus ms-1 hover-white"></i>
                         </button>
                     </div>
                     <div class="col-12 col-md-5 py-2 fs-4 order-md-1 bold">Boolean <span class="dark-rounded">Piano
@@ -413,6 +413,56 @@
             </div>
         </div>
     </main>
+    <!-- Off Canvas Right -->
+    <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Admin Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-6">Nome</div>
+                <div class="col-6">Cognome</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6"><input class="w-100" type="name"></div>
+                <div class="col-6"><input class="w-100" type="name"></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">Email</div>
+                <div class="col-6">Password</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6"><input class="w-100" type="email"></div>
+                <div class="col-6"><input class="w-100" type="password"></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">Citta</div>
+                <div class="col-3">Stato</div>
+                <div class="col-3">Cap</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6"><input class="w-100 " id="inputGroup-sizing-default" type="text"></div>
+                <div class="col-3"><select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli..</option>
+                        <option value="1">Francia</option>
+                        <option value="2">Germania</option>
+                        <option value="3">Italia</option>
+                    </select></div>
+                <div class="col-3"><input class="w-100" type="text"></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">Foto</div>
+            </div>
+            <div class="row mt-2">
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JavaScript -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
