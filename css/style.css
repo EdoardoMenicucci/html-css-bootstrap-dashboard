@@ -71,7 +71,7 @@ button {
 }
 
 .bg-blue {
-    background-color: #1b72e8;
+    background-color: #1b70e8;
 }
 
 .bg-dark-blue {
@@ -93,6 +93,7 @@ body {
     top: 0vh;
     left: 0;
     color: white;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 header {
