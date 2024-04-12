@@ -85,7 +85,7 @@ body {
     height: 100vh;
 }
 
-.left-navBar {
+.left-sidebar {
     width: 5rem;
     height: 96vh;
     margin-top: 4rem;
@@ -219,7 +219,7 @@ select {
 /* Media */
 
 @media screen and (min-width:958px) {
-    .left-navBar {
+    .left-sidebar {
         width: 10rem;
     }
 
